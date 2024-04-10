@@ -49,6 +49,15 @@
   padding-right: 30px;
   font-weight: bolder;
 }
+
+#bar{
+   color: #ff5733; 
+   font-weight: lighter;
+   font-size: 1.5rem;
+   display: none;
+}
+
+
 .back {
   background-image: url("img/bg.jpg");
   width: 100%;
@@ -70,6 +79,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .mid p {
   color: #7f8c8d;
   font-size: 1.3rem;
@@ -446,4 +456,156 @@ h5 {
 .footer p i{
     color: red;
     padding-right: 5px;
+}
+
+
+/* media  query*/
+
+@media screen and (max-width: 1042px){
+    .nav {
+          padding: 1rem 4.5rem;
+      
+      }
+      .nav h2 {
+        font-size: 1.4rem;
+      }
+            
+      #item li {
+        padding-right: 30px;
+      }
+      
+      #item li a {
+        font-size: 0.9rem;
+      }
+    
+      #item .icon i {
+        padding-right: 20px;
+      }   
+}
+@media screen and (max-width: 991px){
+
+    .nav {
+        padding: 1rem 3rem;
+        
+      }
+    .nav h2{
+        font-size: 1.6rem;
+      }
+
+    #item {
+        flex-direction: column;
+        text-align: center; 
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 100000;
+        margin-top: 4.2rem;
+        transition: 0.5s; 
+      }
+      
+      #item li {
+        padding-right: 0;
+        padding: 4px 0;
+      }
+      
+      #item li a{
+        font-size: 1.2rem;
+       
+      }
+       #item .icon{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      } 
+     
+      #item .icon i{
+       padding: 0 15px 0 15px;
+      }
+
+      #bar{
+         display: initial;
+         cursor: pointer;
+      }
+
+      
+    .mid p {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+    .mid h2 {
+        font-size: 2.5rem;
+    }
+    .mid .btn {
+        margin-top: 1.5rem;
+    }
+    
+    .mid .btn a {
+       font-size: 0.9rem;
+    }
+    .mid .btn a.simple {
+       
+        padding: 0.7rem 1.4rem;
+    }
+    
+    .mid .btn a.border {
+       
+        padding: 0.7rem 1.4rem;
+    }
+
+    .details {
+       
+        padding: 6rem 7rem;
+      }
+      
+      
+      .details .one {
+        width: 50%;
+        
+      }
+      
+      .details .one h3 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+      
+      
+      .details .one p {
+        font-size: 1.1rem;
+        padding-bottom: 2.2rem;
+      }
+      
+      .details .one a {
+        font-size: 0.9rem;
+      }
+      
+      
+      
+      .details .two {
+        padding-left: 3.5rem;
+      }
+      .details .two h3 {
+        font-size: 2rem;
+      }
+      
+      .details .two h5 {
+        font-size: 1rem;
+      }
+      
+      .details .two p {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+      }
+
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 496px){
+
 }
